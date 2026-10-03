@@ -16,7 +16,7 @@ export function About() {
         <Reveal className="relative order-2 lg:order-1">
           <div className="relative aspect-[4/5] overflow-hidden rounded-sm sm:aspect-[4/3] lg:aspect-[4/5]">
             <img
-              src="/images/about.jpg"
+              src="images/about.jpg"
               alt="Зал ресторана «Штофъ» с вывеской"
               loading="lazy"
               className="h-full w-full object-cover"
@@ -24,7 +24,7 @@ export function About() {
             <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
           </div>
           <img
-            src="/images/sign.jpg"
+            src="images/sign.jpg"
             alt="Вывеска ресторана ночью"
             loading="lazy"
             className="absolute -bottom-10 -right-2 hidden aspect-square w-44 rounded-sm border-4 border-background object-cover shadow-2xl sm:block md:w-56 lg:-right-10"

@@ -27,7 +27,7 @@ function App() {
             text: "Перейти в меню",
             href: "#menu",
           }}
-          backgroundImage="/images/hero-ref.jpg"
+          backgroundImage="images/hero-ref.jpg"
         />
         <About />
         <MenuSection />

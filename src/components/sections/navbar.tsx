@@ -34,7 +34,7 @@ export function Navbar() {
       <div className="mx-auto flex max-w-[1600px] items-center justify-between px-5 sm:px-8 lg:px-16 xl:px-[6.5%]">
         <a href="#top" aria-label="Штофъ — на главную" className="shrink-0">
           <img
-            src="/images/logo.png"
+            src="images/logo.png"
             alt="Ресторан Штофъ"
             className={cn("w-auto transition-all duration-500", scrolled || open ? "h-10 md:h-12" : "h-16 md:h-28 xl:h-36")}
           />

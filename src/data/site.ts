@@ -43,9 +43,9 @@ export const features = [
 ] as const;
 
 export const signatureDishes = [
-  { title: "Стейк Рибай", note: "Мраморная телятина премиум-класса, хоспер", price: "1120 ₽ / 100 г", src: "/images/gallery/g02.jpg" },
-  { title: "Тальята с нежной телятиной", note: "Телятина, томаты черри, руккола", price: "1300 ₽", src: "/images/gallery/g04.jpg" },
-  { title: "Фирменные пельмени ШТОФЪ", note: "Говядина, свинина, копчёная сметана", price: "400 ₽", src: "/images/gallery/g16.jpg" },
+  { title: "Стейк Рибай", note: "Мраморная телятина премиум-класса, хоспер", price: "1120 ₽ / 100 г", src: "images/gallery/g02.jpg" },
+  { title: "Тальята с нежной телятиной", note: "Телятина, томаты черри, руккола", price: "1300 ₽", src: "images/gallery/g04.jpg" },
+  { title: "Фирменные пельмени ШТОФЪ", note: "Говядина, свинина, копчёная сметана", price: "400 ₽", src: "images/gallery/g16.jpg" },
 ] as const;
 
 export const nastoykiFlavors = [
@@ -84,7 +84,7 @@ const galleryLayout: [string, GallerySpan, string][] = [
 ];
 
 export const gallery = galleryLayout.map(([file, span, alt]) => ({
-  src: `/images/gallery/${file}.jpg`,
+  src: `images/gallery/${file}.jpg`,
   alt: `${alt} — ресторан «Штофъ»`,
   span,
 }));

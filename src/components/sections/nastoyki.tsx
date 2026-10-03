@@ -70,7 +70,7 @@ export function Nastoyki() {
           <div className="relative grid grid-cols-5 gap-4">
             <Reveal className="col-span-3 row-span-2">
               <img
-                src="/images/nastoi-tree.jpg"
+                src="images/nastoi-tree.jpg"
                 alt="Подача настоек «Пьяное дерево»"
                 loading="lazy"
                 className="aspect-[3/4] h-full w-full rounded-sm object-cover"
@@ -78,7 +78,7 @@ export function Nastoyki() {
             </Reveal>
             <Reveal delay={0.1} className="col-span-2">
               <img
-                src="/images/gallery/g11.jpg"
+                src="images/gallery/g11.jpg"
                 alt="Стеллаж с настойками"
                 loading="lazy"
                 className="aspect-square w-full rounded-sm object-cover"
@@ -86,7 +86,7 @@ export function Nastoyki() {
             </Reveal>
             <Reveal delay={0.2} className="col-span-2">
               <img
-                src="/images/ladya.jpg"
+                src="images/ladya.jpg"
                 alt="Подача «Ладья» на 28 рюмок"
                 loading="lazy"
                 className="aspect-square w-full rounded-sm object-cover"
