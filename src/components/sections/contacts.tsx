@@ -1,9 +1,11 @@
-import { Clock, MapPin, Navigation, Phone } from "lucide-react";
+import { CalendarCheck, Clock, MapPin, Navigation, Phone } from "lucide-react";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { site } from "@/data/site";
+import { useBooking } from "@/components/booking/booking-context";
 
 export function Contacts() {
+  const { openBooking } = useBooking();
   return (
     <section id="contacts" className="relative border-t border-border bg-card/40 py-24 md:py-32">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-16 xl:px-24">
@@ -54,6 +56,9 @@ export function Contacts() {
             </div>
 
             <div className="flex flex-wrap gap-4 pt-2">
+              <button type="button" onClick={openBooking} className="btn-frame text-foreground">
+                <CalendarCheck className="h-4 w-4" /> Забронировать столик
+              </button>
               <a href={site.phoneHref} className="btn-frame text-foreground">
                 <Phone className="h-4 w-4" /> Позвонить
               </a>

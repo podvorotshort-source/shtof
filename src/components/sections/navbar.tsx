@@ -3,10 +3,12 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Menu, Phone, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { nav, site } from "@/data/site";
+import { useBooking } from "@/components/booking/booking-context";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const { openBooking } = useBooking();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -53,9 +55,9 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <a href={site.phoneHref} className="btn-frame hidden px-6 py-3 text-xs text-white sm:inline-flex xl:text-sm">
+          <button type="button" onClick={openBooking} className="btn-frame hidden px-6 py-3 text-xs text-white sm:inline-flex xl:text-sm">
             Забронировать столик
-          </a>
+          </button>
           <a
             href={site.phoneHref}
             aria-label="Позвонить"
@@ -99,8 +101,18 @@ export function Navbar() {
                 </motion.li>
               ))}
             </ul>
-            <a href={site.phoneHref} className="btn-frame mb-10 mt-10 w-full text-foreground">
-              Забронировать: {site.phone}
+            <button
+              type="button"
+              onClick={() => {
+                setOpen(false);
+                openBooking();
+              }}
+              className="btn-frame mb-4 mt-10 w-full text-foreground"
+            >
+              Забронировать столик
+            </button>
+            <a href={site.phoneHref} className="mb-10 block text-center text-muted-foreground">
+              или позвоните: {site.phone}
             </a>
           </motion.nav>
         )}

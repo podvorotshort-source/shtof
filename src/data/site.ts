@@ -22,6 +22,8 @@ export const site = {
     { days: "Воскресенье", time: "12:00 — 00:00" },
   ],
   lunch: "12:00 — 16:00",
+  /** Google Apps Script web app that forwards booking requests to the staff Telegram chat (see backend/). */
+  bookingEndpoint: (import.meta.env.VITE_BOOKING_ENDPOINT as string | undefined) || "",
 } as const;
 
 export const nav = [

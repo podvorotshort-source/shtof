@@ -1,4 +1,5 @@
 import { MotionConfig } from "framer-motion";
+import { BookingProvider } from "@/components/booking/booking-context";
 import { HeroSection } from "@/components/ui/hero-section-2";
 import { About } from "@/components/sections/about";
 import { Contacts } from "@/components/sections/contacts";
@@ -12,6 +13,7 @@ import { Reviews } from "@/components/sections/reviews";
 function App() {
   return (
     <MotionConfig reducedMotion="user">
+      <BookingProvider>
       <Navbar />
       <main>
         <HeroSection
@@ -37,6 +39,7 @@ function App() {
         <Contacts />
       </main>
       <Footer />
+      </BookingProvider>
     </MotionConfig>
   );
 }
