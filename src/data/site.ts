@@ -23,7 +23,8 @@ export const site = {
   ],
   lunch: "12:00 — 16:00",
   /** Google Apps Script web app that forwards booking requests to the staff Telegram chat (see backend/). */
-  bookingEndpoint: (import.meta.env.VITE_BOOKING_ENDPOINT as string | undefined) || "",
+  bookingEndpoint: (import.meta.env.VITE_BOOKING_ENDPOINT as string | undefined) ||
+    "https://script.google.com/macros/s/AKfycbylqg-LGajazzWdlIiHyk6K88V1n1QF67ezd0MheTctrNxvmZX_5B9mDNvnE96IPjUL3Q/exec",
 } as const;
 
 export const nav = [
