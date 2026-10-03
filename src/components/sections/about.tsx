@@ -13,7 +13,7 @@ export function About() {
   return (
     <section id="about" className="relative py-24 md:py-32">
       <div className="mx-auto grid max-w-[1400px] items-center gap-14 px-5 sm:px-8 lg:grid-cols-2 lg:gap-20 lg:px-16 xl:px-24">
-        <Reveal className="relative order-2 lg:order-1">
+        <Reveal className="relative order-2 hidden lg:order-1 lg:block">
           <div className="relative aspect-[4/5] overflow-hidden rounded-sm sm:aspect-[4/3] lg:aspect-[4/5]">
             <img
               src="images/about.jpg"
